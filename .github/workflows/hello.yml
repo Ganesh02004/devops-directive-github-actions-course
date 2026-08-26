@@ -1,0 +1,14 @@
+name: pyhton_script
+on:
+  push:
+    branches:
+      - main
+      - 'feature/*'
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print_array_of_numbers
+        run: python -c "print([i for i in range(1, 101)])"
+
+    
