@@ -1,9 +1,7 @@
-name: pyhton_script
+name: python_script
 on:
   push:
-    branches:
-      - main
-      - 'feature/*'
+
 jobs:
   run-python-script:
     runs-on: ubuntu-latest
